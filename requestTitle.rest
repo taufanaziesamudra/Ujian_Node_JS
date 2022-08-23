@@ -1,0 +1,32 @@
+// Get All Title
+GET http://localhost:5000/title
+
+// Get By Id
+###
+GET http://localhost:5000/title/1
+
+// Create Title
+###
+POST http://localhost:5000/title
+Content-Type: application/json
+
+{
+    "WORKER_REF_ID": "3",
+    "WORKER_TITLE": "Lead",
+    "AFFECTED_FROM": "2016-06-1 00:00:00"
+}
+
+// Update Title
+###
+PATCH http://localhost:5000/title/1
+Content-Type: application/json
+
+{
+    "WORKER_REF_ID": "3",
+    "WORKER_TITLE": "Lead",
+    "AFFECTED_FROM": "2016-06-1 00:00:00"
+}
+
+// Delete Tilte
+###
+DELETE http://localhost:5000/title/1

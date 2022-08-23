@@ -1,0 +1,32 @@
+// Get All Bonus
+GET http://localhost:5000/bonus
+
+// Get By Id
+###
+GET http://localhost:5000/bonus/1
+
+// Create Bonus
+###
+POST http://localhost:5000/bonus
+Content-Type: application/json
+
+{
+    "WORKER_REF_ID": "2",
+    "BONUS_DATE": "2016-06-11 00:00:00",
+    "BONUS_AMOUNT": "4500"
+}
+
+// Update Bonus
+###
+PATCH http://localhost:5000/bonus/1
+Content-Type: application/json
+
+{
+    "WORKER_REF_ID": "3",
+    "WORKER_TITLE": "Lead",
+    "AFFECTED_FROM": "2016-06-1 00:00:00"
+}
+
+// Delete Bonus
+###
+DELETE http://localhost:5000/bonus/1

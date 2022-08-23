@@ -1,0 +1,38 @@
+// Get All Worker
+GET http://localhost:5000/worker
+
+// Get By Id
+###
+GET http://localhost:5000/worker/1
+
+// Create Worker
+###
+POST http://localhost:5000/worker
+Content-Type: application/json
+
+{
+    "WORKER_ID": "008",
+    "FIRST_NAME": "Geetika",
+    "LAST_NAME": "Chauhan",
+    "SALARY":"90000",
+    "JOINING_DATE": "2014-01-20 09:00:00",
+    "DEPARTMENT": "Admin"
+}
+
+// Update Worker
+###
+PATCH http://localhost:5000/worker/2
+Content-Type: application/json
+
+{
+    "WORKER_ID": "002",
+    "FIRST_NAME": "Niharika",
+    "LAST_NAME": "Verma",
+    "SALARY":"80000",
+    "JOINING_DATE": "2014-06-11 09:00:00",
+    "DEPARTMENT": "HR"
+}
+
+// Delete Worker
+###
+DELETE http://localhost:5000/worker/2
